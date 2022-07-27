@@ -120,7 +120,6 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/color2_icon_transparent_background.webp",
           "logo_width": 120,
           "logo_position": "middle-left",
           "menu": "main-menu-1",
