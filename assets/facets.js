@@ -44,7 +44,7 @@ class FacetFiltersForm extends HTMLElement {
 
     sections.forEach((section) => {
 if (window.location.pathname === "/") {
- window.location = `${window.location.origin}/collections/all?${searchParams}`;
+ window.location = `${window.location.origin}/collections/all-products?${searchParams}`;
  return;
 }
       const url = `${window.location.pathname}?section_id=${section.section}&${searchParams}`;

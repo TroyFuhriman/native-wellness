@@ -239,10 +239,10 @@
         const hashedPassword = utils.hash.SHA1(submittedPassword);
         if (hashedPassword !== "{{password}}"){
           count++
-          addError(element, required)
+          addError(element, required);
         } 
         else{
-          removeError(element, required)
+          removeError(element, required);
         }
       }
     });
