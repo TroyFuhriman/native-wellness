@@ -246,11 +246,11 @@ e.preventDefault();
 }
 const addError = (input, requiredElem) => {
   input.classList.add("error");
-      requiredElem.dataset.showLive = true;
+      requiredElem?.dataset?.showLive = true;
 }
 const removeError = (input, requiredElem) => {
   input.classList.remove("error");
-      requiredElem.dataset.showLive = false;
+      requiredElem?.dataset?.showLive = false;
 }
 
 
