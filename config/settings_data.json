@@ -169,7 +169,7 @@
             "type": "text",
             "settings": {
               "heading": "Hours",
-              "subtext": "<p>Monday: 9-5<br\/>Tuesday: 9 – 6<br\/>Wednesday: 9 – 5<br\/>Thursday: 9 – 5<br\/>Friday: 9 – 1<br\/>Saturday: Closed<br\/>Sunday: Closed<\/p><p><\/p><p><a href=\"https:\/\/shop.drjabanmoore.com\/pages\/terms-policies\" title=\"https:\/\/shop.drjabanmoore.com\/pages\/terms-policies\">Terms & Policies<\/a><\/p><p><\/p><p>* Please note that we do not ship packages on days that we are closed<\/p>"
+              "subtext": "<p>Monday - Thursday: 9:00 AM to 5:00 PM<br\/>Friday - Sunday: Closed<\/p><p><\/p><p><a href=\"https:\/\/shop.drjabanmoore.com\/pages\/terms-policies\" title=\"https:\/\/shop.drjabanmoore.com\/pages\/terms-policies\">Terms & Policies<\/a><\/p><p><\/p><p>* Please note that we do not ship packages on days that we are closed<\/p>"
             }
           },
           "d1574de8-ecc9-4266-9a36-22a01a28d600": {
@@ -177,13 +177,6 @@
             "settings": {
               "heading": "Location",
               "subtext": "<p>PHONE: (580) 618-1109<br\/>1432 W. Broadway Ave.<br\/> Sulphur, OK<\/p><p><a href=\"mailto:support@nativewellnessllc.com\">support@nativewellnessllc.com<\/a><\/p>"
-            }
-          },
-          "9e8cca9b-2860-42b2-bb13-1d41c11660e6": {
-            "type": "text",
-            "settings": {
-              "heading": "International Orders",
-              "subtext": "<p>Please note that international shipping is done at the customer's risk. Once an order has shipped, RWC is no longer responsible for that order. In the case that an order is denied entry by customs, RWC is unable to issue a refund for the order amount or any shipping fees incurred. USPS First Class Mail is not insured. We will not be able to provide assistance if your package is lost, stolen, or undelivered. In the event of a delivery anomaly, you will need to work directly with USPS for resolution.<\/p>"
             }
           }
         },
@@ -193,8 +186,7 @@
           "image",
           "text-1",
           "7c5e7963-63ab-45aa-a68b-6efee9795ebe",
-          "d1574de8-ecc9-4266-9a36-22a01a28d600",
-          "9e8cca9b-2860-42b2-bb13-1d41c11660e6"
+          "d1574de8-ecc9-4266-9a36-22a01a28d600"
         ],
         "settings": {
           "color_scheme": "background-1",
