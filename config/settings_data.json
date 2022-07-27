@@ -1,10 +1,10 @@
 {
   "current": {
-    "colors_solid_button_labels": "#1f6e7f",
+    "colors_solid_button_labels": "#00194a",
     "colors_accent_1": "#ffffff",
     "gradient_accent_1": "",
     "colors_accent_2": "#ffffff",
-    "gradient_accent_2": "linear-gradient(320deg, rgba(31, 110, 127, 1), rgba(31, 110, 127, 1) 100%)",
+    "gradient_accent_2": "linear-gradient(320deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
     "colors_text": "#494a4b",
     "colors_outline_button_labels": "#1f6e7f",
     "colors_background_1": "#ffffff",
@@ -169,7 +169,7 @@
             "type": "text",
             "settings": {
               "heading": "Hours",
-              "subtext": "<p>Monday - Thursday: 9:00 AM to 5:00 PM<br\/>Friday - Sunday: Closed<\/p><p><\/p><p><a href=\"https:\/\/shop.drjabanmoore.com\/pages\/terms-policies\" title=\"https:\/\/shop.drjabanmoore.com\/pages\/terms-policies\">Terms & Policies<\/a><\/p><p><\/p><p>* Please note that we do not ship packages on days that we are closed<\/p>"
+              "subtext": "<p>Monday - Thursday: 9:00 AM to 5:00 PM<br\/>Friday - Sunday: Closed<\/p><p>* Please note that we do not ship packages on days that we are closed<\/p>"
             }
           },
           "d1574de8-ecc9-4266-9a36-22a01a28d600": {
