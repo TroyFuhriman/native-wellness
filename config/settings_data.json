@@ -100,19 +100,6 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
-        "blocks": {
-          "380ec8e0-9a34-45cf-aad5-82514147440e": {
-            "type": "announcement",
-            "settings": {
-              "text": "Native Wellness",
-              "color_scheme": "accent-1",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "380ec8e0-9a34-45cf-aad5-82514147440e"
-        ],
         "settings": {
         }
       },
