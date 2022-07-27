@@ -2,39 +2,10 @@
   "sections": {
     "main-collection-banner": {
       "type": "main-collection-banner",
-      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
         "color_scheme": "background-1"
-      }
-    },
-    "165276341132e0ab0a": {
-      "type": "image-banner",
-      "blocks": {
-        "43ae51ab-6c08-445c-b18f-c51c8c23625e": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "43ae51ab-6c08-445c-b18f-c51c8c23625e"
-      ],
-      "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "top-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-2",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": true
       }
     },
     "main-collection-product-grid": {
@@ -64,7 +35,6 @@
   },
   "order": [
     "main-collection-banner",
-    "165276341132e0ab0a",
     "main-collection-product-grid",
     "1652758742170ea9f2"
   ]
