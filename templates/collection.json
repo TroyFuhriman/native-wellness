@@ -25,7 +25,6 @@
         "43ae51ab-6c08-445c-b18f-c51c8c23625e"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/shutterstock_150535742-1500x630.jpg",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "adapt_height_first_image": false,
@@ -43,7 +42,7 @@
       "settings": {
         "products_per_page": 20,
         "columns_desktop": 4,
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "show_secondary_image": false,
         "show_vendor": true,
         "show_rating": false,
@@ -58,19 +57,6 @@
     },
     "1652758742170ea9f2": {
       "type": "apps",
-      "blocks": {
-        "098ddc2d-358d-4a52-85b2-ec2c4343c6dd": {
-          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "heading_size": 20,
-            "feed_width": 100,
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "098ddc2d-358d-4a52-85b2-ec2c4343c6dd"
-      ],
       "settings": {
         "include_margins": true
       }
