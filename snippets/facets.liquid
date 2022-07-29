@@ -670,6 +670,56 @@
                   </div>
                 </div>
               {%- endif -%}
+              {% if results.filters.size == 0 %}
+                
+              
+              {%- comment -%}NOTE Start Mobile category filter{%- endcomment -%}
+              <details id="category-mobile" class="mobile-facets__details" data-index="mobile-2">
+                <summary class="mobile-facets__summary focus-inset" role="button" aria-expanded="false" aria-controls="FacetMobile-2-template--16282945618160__main-collection-product-grid">
+                  <div>
+                    <span>Category</span>
+                    <span class="mobile-facets__arrow no-js-hidden"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
+</path></svg>
+</span>
+                    <noscript><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+</svg>
+</noscript>
+                  </div>
+                </summary>
+                <div id="FacetMobile-2-template--16282945618160__main-collection-product-grid" class="mobile-facets__submenu gradient">
+                  <button class="mobile-facets__close-button link link--text focus-inset" aria-expanded="true" type="button">
+                    <svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
+</path></svg>
+
+                    Category
+                  </button>
+                  <ul class="mobile-facets__list list-unstyled" role="list">
+                    <li class="mobile-facets__item list-menu__item">
+                      <label for="category-mobile-all" class="mobile-facets__label">
+                        <input class="" id="category-mobile-all" type="radio" name="category-mobile" value="" >
+                        <span class="mobile-facets__highlight"></span>
+                        <span aria-hidden="true">All</span>
+                        <span class="visually-hidden">All</span>
+                      </label>
+                    </li>
+                    {% for tag in collection.all_tags %}
+                      <li class="mobile-facets__item list-menu__item">
+                        <label for="category-mobile-{{tag | downcase | split: ' ' | join: '-'}}" class="mobile-facets__label">
+                          <input class="" id="category-mobile-{{tag | downcase | split: ' ' | join: '-'}}" type="radio" name="category-mobile" value="{{tag}}" >
+                          <span class="mobile-facets__highlight"></span>
+                          <span aria-hidden="true">{{tag}}</span>
+                          <span class="visually-hidden">{{tag}}</span>
+                        </label>
+                      </li>
+                    {% endfor %}
+                     </ul>
+                </div>
+              </details>
+              {%- comment -%}NOTE end mobile category filter{%- endcomment -%}
+              {% endif %}
 
               <div class="mobile-facets__footer">
                 <facet-remove class="mobile-facets__clear-wrapper">
@@ -828,13 +878,14 @@
   const setRadioCheckForCategoryFilter = ()=>{
     const location = window.location.pathname;
     const locationArr = location.split("/").filter(Boolean);
-    console.log(locationArr)
     if (locationArr.length ===2) {
       document.querySelector("#category-All").checked = true;
+      document.querySelector("#category-mobile-all").checked = true;
     }
     else{
       const category = locationArr[locationArr.length -1].toLowerCase();
       document.querySelector(`#category-${category}`).checked = true;
+      document.querySelector(`#category-mobile-${category}`).checked = true;
     }
   }
   setRadioCheckForCategoryFilter();

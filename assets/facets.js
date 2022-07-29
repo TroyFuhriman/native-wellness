@@ -172,8 +172,7 @@ if (window.location.pathname === "/") {
   }
 
   onSubmitForm(searchParams, event) {
-console.log("hello")
-    // FacetFiltersForm.renderPage(searchParams, event);
+    FacetFiltersForm.renderPage(searchParams, event);
   }
 
   onSubmitHandler(event) {
