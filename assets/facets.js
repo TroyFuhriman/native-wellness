@@ -172,11 +172,16 @@ if (window.location.pathname === "/") {
   }
 
   onSubmitForm(searchParams, event) {
-    FacetFiltersForm.renderPage(searchParams, event);
+console.log("hello")
+    // FacetFiltersForm.renderPage(searchParams, event);
   }
 
   onSubmitHandler(event) {
     event.preventDefault();
+    if(event.target.id.includes("category")){
+      window.location.pathname = `/collections/all-products/${event.target.value.split(" ").join("-")}`
+      return;
+    }
     const sortFilterForms = document.querySelectorAll('facet-filters-form form');
     if (event.srcElement.className == 'mobile-facets__checkbox') {
       const searchParams = this.createSearchParams(event.target.closest('form'))

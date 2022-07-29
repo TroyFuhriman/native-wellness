@@ -83,6 +83,7 @@
 
             <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
             {% comment %} Filters for both horizontal and vertical filter {% endcomment %}
+
             {%- for filter in results.filters -%}
               {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
               {% case filter.type %}
@@ -142,6 +143,7 @@
                             </label>
                           </li> 
                         {%- endfor -%}
+                        
                       </ul>
                       {% comment %} No show more for no JS {% endcomment %}
                       <ul class="{% if filter_type != 'vertical' %} facets__list{% endif %} list-unstyled no-js" role="list">
@@ -260,6 +262,45 @@
                 </details>
               {% endcase %}
             {%- endfor -%}
+
+            {%- comment -%}NOTE start new filter{%- endcomment -%}
+            {% unless collection.all_tags.size == 0 %}
+              <details id="categoryFilter" class="disclosure-has-popup facets__disclosure" data-index="4">
+                <summary class="facets__summary caption-large focus-offset" role="button" >
+                  <div>
+                    <span>Category</span>
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                      </path>
+                    </svg>
+                  </div>
+                </summary>
+                <div class="parent-display facets__display">
+                  <fieldset class="facets-wrap parent-wrap ">
+                    <legend class="visually-hidden">Brand</legend>
+                    <ul data-category="ul" class=" facets__list list-unstyled no-js-hidden" role="list">
+                      <li class="list-menu__item facets__item">
+                        <label for="category-All" class="facet-checkbox">
+                          <input type="radio" id="category-All" name="category" value="">
+                          <span aria-hidden="true">All</span>
+                          <span class="visually-hidden">All</span>
+                        </label>
+                      </li>
+                      {% for item in collection.all_tags %}
+                      <li class="list-menu__item facets__item">
+                          <label for="category-{{item | downcase | split: ' ' | join: '-'}}" class="facet-checkbox">
+                            <input type="radio" id="category-{{item | downcase | split: ' ' | join: '-'}}" name="category" value="{{item | downcase}}">
+                            <span aria-hidden="true">{{item}}</span>
+                            <span class="visually-hidden">{{item}}</span>
+                          </label>
+                        </li>
+                        {% endfor %}  
+                    </ul>
+                  </fieldset>
+                </div>
+              </details>
+            {% endunless %}
+            {%- comment -%}NOTE end new filter{%- endcomment -%}
             <noscript>
               <button type="submit" class="facets__button-no-js button button--secondary">{{ 'products.facets.filter_button' | t }}</button>
             </noscript>
@@ -495,6 +536,52 @@
                         </div>
                       </div>
                     </details>
+                    {%- comment -%}NOTE Start Mobile category filter{%- endcomment -%}
+                    <details id="category-mobile" class="mobile-facets__details" data-index="mobile-2">
+                      <summary class="mobile-facets__summary focus-inset" role="button" aria-expanded="false" aria-controls="FacetMobile-2-template--16282945618160__main-collection-product-grid">
+                        <div>
+                          <span>Category</span>
+                          <span class="mobile-facets__arrow no-js-hidden"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
+</path></svg>
+</span>
+                          <noscript><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+</svg>
+</noscript>
+                        </div>
+                      </summary>
+                      <div id="FacetMobile-2-template--16282945618160__main-collection-product-grid" class="mobile-facets__submenu gradient">
+                        <button class="mobile-facets__close-button link link--text focus-inset" aria-expanded="true" type="button">
+                          <svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
+</path></svg>
+
+                          Category
+                        </button>
+                        <ul class="mobile-facets__list list-unstyled" role="list">
+                          <li class="mobile-facets__item list-menu__item">
+                            <label for="category-mobile-all" class="mobile-facets__label">
+                              <input class="" id="category-mobile-all" type="radio" name="category-mobile" value="" >
+                              <span class="mobile-facets__highlight"></span>
+                              <span aria-hidden="true">All</span>
+                              <span class="visually-hidden">All</span>
+                            </label>
+                          </li>
+                          {% for tag in collection.all_tags %}
+                            <li class="mobile-facets__item list-menu__item">
+                              <label for="category-mobile-{{tag | downcase | split: ' ' | join: '-'}}" class="mobile-facets__label">
+                                <input class="" id="category-mobile-{{tag | downcase | split: ' ' | join: '-'}}" type="radio" name="category-mobile" value="{{tag}}" >
+                                <span class="mobile-facets__highlight"></span>
+                                <span aria-hidden="true">{{tag}}</span>
+                                <span class="visually-hidden">{{tag}}</span>
+                              </label>
+                            </li>
+                          {% endfor %}
+                           </ul>
+                      </div>
+                    </details>
+                    {%- comment -%}NOTE end mobile category filter{%- endcomment -%}
                   {% when 'price_range' %}
                     <details id="Details-Mobile-{{ forloop.index }}-{{ section.id }}" class="mobile-facets__details js-filter" data-index="mobile-{{ forloop.index }}">
                       <summary class="mobile-facets__summary focus-inset">
@@ -737,3 +824,18 @@
   {%- endif -%}
 </div>
 
+<script>
+  const setRadioCheckForCategoryFilter = ()=>{
+    const location = window.location.pathname;
+    const locationArr = location.split("/").filter(Boolean);
+    console.log(locationArr)
+    if (locationArr.length ===2) {
+      document.querySelector("#category-All").checked = true;
+    }
+    else{
+      const category = locationArr[locationArr.length -1].toLowerCase();
+      document.querySelector(`#category-${category}`).checked = true;
+    }
+  }
+  setRadioCheckForCategoryFilter();
+</script>
