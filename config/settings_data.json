@@ -165,6 +165,14 @@
               "heading": "Location",
               "subtext": "<p>PHONE: (580) 618-1109<br\/>1432 W. Broadway Ave.<br\/> Sulphur, OK<\/p><p><a href=\"mailto:support@nativewellnessllc.com\">support@nativewellnessllc.com<\/a><\/p>"
             }
+          },
+          "6a0de35f-b670-4ada-aa65-4e3b6164a4b9": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "heading": "Heading",
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            }
           }
         },
         "block_order": [
@@ -173,7 +181,8 @@
           "image",
           "text-1",
           "7c5e7963-63ab-45aa-a68b-6efee9795ebe",
-          "d1574de8-ecc9-4266-9a36-22a01a28d600"
+          "d1574de8-ecc9-4266-9a36-22a01a28d600",
+          "6a0de35f-b670-4ada-aa65-4e3b6164a4b9"
         ],
         "settings": {
           "color_scheme": "background-1",
@@ -191,6 +200,7 @@
       "main-password-header": {
         "type": "main-password-header",
         "settings": {
+          "logo": "shopify:\/\/shop_images\/color2_icon_transparent_background.webp",
           "logo_max_width": 100,
           "color_scheme": "background-1"
         }
