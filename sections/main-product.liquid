@@ -276,7 +276,6 @@
               </details>
             </div>
           {%- when 'quantity_selector' -%}
-          {% if customer %}
             
           <div class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}" {{ block.shopify_attributes }}>
             <label class="form__label" for="Quantity-{{ section.id }}">
@@ -302,7 +301,6 @@
               </button>
             </quantity-input>
           </div>
-          {% endif %}
           {%- when 'popup' -%}
           <modal-opener class="product-popup-modal__opener no-js-hidden quick-add-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
                 <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.text | default: block.settings.page.title }}</button>
@@ -433,7 +431,6 @@
                   </svg>
                   <span class="product-form__error-message"></span>
                 </div>
-                {% if customer %}
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
                   <div class="product-form__buttons">
@@ -462,10 +459,13 @@
                   {%- endif -%}
                 </div>
                 {%- endform -%}
+            {%- comment -%}
+            {% if customer %}
                 {% else %}
                   <p><span class="error">Account Required:</span> {{block.settings.account_required}}</p>
                   <button data-login class="button buttton-full-width">Login</button>
                 {% endif %}
+            {%- endcomment -%}
               </product-form>
 
               {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
