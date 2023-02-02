@@ -457,7 +457,7 @@
                       </svg>
                     </div>
                   </button>
-                  {%- if block.settings.show_dynamic_checkout and customer -%}
+                  {%- if block.settings.show_dynamic_checkout -%}
                   {{ form | payment_button }}
                   {%- endif -%}
                 </div>
