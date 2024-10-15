@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -7,7 +16,6 @@
           "type": "text",
           "settings": {
             "text": "{{ product.vendor }}",
-            "login": "Account Required text",
             "text_style": "uppercase"
           }
         },
@@ -20,7 +28,6 @@
           "type": "text",
           "settings": {
             "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "login": "Account Required text",
             "text_style": "subtitle"
           }
         },
@@ -43,7 +50,8 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": true,
+            "account_required": "Please login or create an account, to view pricing information, and to purchase this product"
           }
         },
         "description": {
@@ -68,6 +76,9 @@
         "buy_buttons",
         "description",
         "277ff276-7efe-4a5c-812f-dcfbc849c930"
+      ],
+      "custom_css": [
+        ".btn--add-to-cart {background: #8A9A5B; border: #000000; color: white;}"
       ],
       "settings": {
         "enable_sticky_info": false,
