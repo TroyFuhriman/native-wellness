@@ -1,16 +1,25 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "colors_solid_button_labels": "#00194a",
+    "colors_solid_button_labels": "#000000",
     "colors_accent_1": "#ffffff",
-    "gradient_accent_1": "radial-gradient(rgba(252, 146, 160, 1), rgba(247, 197, 204, 1) 100%, rgba(215, 204, 250, 1) 100%)",
-    "colors_accent_2": "#ffebeb",
-    "gradient_accent_2": "linear-gradient(320deg, rgba(255, 235, 235, 1) 100%, rgba(255, 255, 255, 1) 100%)",
-    "colors_text": "#00194a",
-    "colors_outline_button_labels": "#1f6e7f",
+    "gradient_accent_1": "radial-gradient(rgba(178, 252, 146, 1), rgba(80, 148, 5, 1) 82%, rgba(84, 147, 79, 1) 99%)",
+    "colors_accent_2": "#9dd19b",
+    "gradient_accent_2": "linear-gradient(320deg, rgba(157, 209, 155, 1) 100%, rgba(255, 255, 255, 1) 100%)",
+    "colors_text": "#000000",
+    "colors_outline_button_labels": "#ba710c",
     "colors_background_1": "#ffffff",
     "gradient_background_1": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 3%)",
     "colors_background_2": "#fff",
-    "gradient_background_2": "linear-gradient(158deg, rgba(31, 110, 127, 1), rgba(63, 221, 255, 0) 84%)",
+    "gradient_background_2": "linear-gradient(158deg, rgba(186, 113, 12, 1), rgba(63, 221, 255, 0) 84%)",
     "type_header_font": "glegoo_n4",
     "heading_scale": 130,
     "type_body_font": "harmonia_sans_n4",
@@ -95,7 +104,7 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
-    "favicon": "shopify:\/\/shop_images\/color2_icon_transparent_background.webp",
+    "favicon": "shopify://shop_images/color2_icon_transparent_background.webp",
     "currency_code_enabled": true,
     "sections": {
       "announcement-bar": {
@@ -107,7 +116,7 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/color2_icon_transparent_background.webp",
+          "logo": "shopify://shop_images/color2_icon_transparent_background.webp",
           "logo_width": 120,
           "logo_position": "top-left",
           "menu": "main-menu",
@@ -133,7 +142,7 @@
             "disabled": true,
             "settings": {
               "heading": "Our Store",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
             }
           },
           "image": {
@@ -149,21 +158,21 @@
             "disabled": true,
             "settings": {
               "heading": "Our Promise",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
             }
           },
           "7c5e7963-63ab-45aa-a68b-6efee9795ebe": {
             "type": "text",
             "settings": {
               "heading": "Hours",
-              "subtext": "<p>Monday, Tuesday, & Thursday: 9:00 am to 5:00 pm<br\/><\/p><p>Wednesday 9:00 am to 12:00 pm<\/p><p>Friday - Sunday: Closed<\/p><p>* Please note that we do not ship packages on days that we are closed<\/p>"
+              "subtext": "<p>Monday, Tuesday, & Thursday: 9:00 am to 5:00 pm<br/></p><p>Wednesday 9:00 am to 12:00 pm</p><p>Friday - Sunday: Closed</p><p>* Please note that we do not ship packages on days that we are closed</p>"
             }
           },
           "d1574de8-ecc9-4266-9a36-22a01a28d600": {
             "type": "text",
             "settings": {
               "heading": "Location",
-              "subtext": "<p>PHONE: (580) 622-4045<br\/>1432 W. Broadway Ave.<br\/> Sulphur, OK 73086<\/p><p><a href=\"mailto:support@nativewellnessllc.com\">support@nativewellnessllc.com<\/a><\/p>"
+              "subtext": "<p>PHONE: (580) 622-4045<br/>1432 W. Broadway Ave.<br/> Sulphur, OK 73086</p><p><a href=\"mailto:support@nativewellnessllc.com\">support@nativewellnessllc.com</a></p>"
             }
           },
           "6a0de35f-b670-4ada-aa65-4e3b6164a4b9": {
@@ -171,7 +180,7 @@
             "disabled": true,
             "settings": {
               "heading": "Heading",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
             }
           }
         },
@@ -200,7 +209,7 @@
       "main-password-header": {
         "type": "main-password-header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/color2_icon_transparent_background.webp",
+          "logo": "shopify://shop_images/color2_icon_transparent_background.webp",
           "logo_max_width": 100,
           "color_scheme": "background-1"
         }
@@ -359,7 +368,7 @@
               "type": "text",
               "settings": {
                 "heading": "Our Store",
-                "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+                "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
               }
             },
             "image": {
@@ -373,7 +382,7 @@
               "type": "text",
               "settings": {
                 "heading": "Our Promise",
-                "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+                "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
               }
             }
           },
