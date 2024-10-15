@@ -420,5 +420,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".btn--add-to-cart {background: #8a9a5b; border: #000000; color: #FFFFFF;}"
+    ]
   }
 }
